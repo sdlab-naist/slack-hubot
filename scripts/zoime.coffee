@@ -34,7 +34,8 @@ module.exports = (robot) ->
         'いけるきがする':'https://pbs.twimg.com/media/BswuNkICcAE4olR.jpg:large'
         '進捗':'http://pic.non117.com/C/ch.jpg'
         '土下座':'http://anfield.blog.ocn.ne.jp/gorimuchu/images/2014/03/21/new_game_01_p011_2.jpg'
-        'help':'おはようございます\nありがとうございます\nきゅうけいする\nごはんにする\nやすむ\nねる\nもう夜\nきたく\nあきらめる\nがんばる\nがんばるぞい\nやった\nだめだ\nぐーたらする\nいけるきがする\n進捗\n土下座'
+        'がんばれた':'https://pbs.twimg.com/media/B48WE_XIIAAqDls.jpg'
+        'help':'おはようございます\nありがとうございます\nきゅうけいする\nごはんにする\nやすむ\nねる\nもう夜\nきたく\nあきらめる\nがんばる\nがんばるぞい\nやった\nだめだ\nぐーたらする\nいけるきがする\n進捗\n土下座\nがんばれた'
     }
     result = zois[name]
     if result
