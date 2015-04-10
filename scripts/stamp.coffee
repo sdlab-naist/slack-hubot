@@ -13,6 +13,7 @@ module.exports = (robot) ->
         'おだやか' : 'http://i.imgur.com/TXifHdh.png'
         'もうそう' : 'http://i.imgur.com/CDG74V5.png'
         'まがお' : 'http://i.imgur.com/SKkVGwK.png'
+        'うるさい' : 'http://i.imgur.com/DrK5DNk.png'
     }
 
     help = ""
@@ -25,6 +26,6 @@ module.exports = (robot) ->
     else
         result = dict[name]
         if result
-            msg.send "#{result}"
+            msg.send "#{result}?#{new Date().getTime()}"
         else
             msg.send "#{name}はないぞい"
