@@ -1,5 +1,5 @@
 module.exports = (robot) ->
-  robot.hear /(stamp|gacha) (.*)/i, (msg) ->
+  robot.hear /stamp (.*)/i, (msg) ->
     name = msg.match[1]
 
     dict = {
@@ -113,7 +113,7 @@ module.exports = (robot) ->
         msg.send "#{help}"
     else
         result = dict[name]
-        if result && msg.match[0] == "stamp"
+        if result
             msg.send "#{result}?#{new Date().getTime()}"
         else
             msg.send "#{null_list[Math.floor(Math.random() * null_list.length)]}?#{new Date().getTime()}"
