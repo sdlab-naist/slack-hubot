@@ -3,9 +3,13 @@ module.exports = (robot) ->
     name = msg.match[1]
 
     dict = {
-        '帰りたい' : 'https://sdlab.slack.com/files/umr00/F04BCBE7F/slack_for_ios_upload.png'
-        'ファイト' : 'http://livedoor.blogimg.jp/deremasu/imgs/c/2/c2e69d9b.png'
-        'お疲れ様です' : 'http://blog-imgs-48.fc2.com/7/t/o/7toriaezu/20131225185331174.png'
+        'かえりたい' : 'https://sdlab.slack.com/files/umr00/F04BCBE7F/slack_for_ios_upload.png'
+        'ふぁいと' : 'http://livedoor.blogimg.jp/deremasu/imgs/c/2/c2e69d9b.png'
+        'おつかれ' : 'http://blog-imgs-48.fc2.com/7/t/o/7toriaezu/20131225185331174.png'
+        'ぱない' : 'http://livedoor.blogimg.jp/deremasu/imgs/4/d/4dd5bd7b.png'
+        'うける' : 'http://open2ch.net/p/appli-1410951928-465.png'
+        'がんばる' : 'http://blog-imgs-74.fc2.com/7/t/o/7toriaezu/rain.jpg'
+        'しずかに' : 'http://livedoor.blogimg.jp/deremasu/imgs/f/9/f90af096.png'
     }
 
     help = ""
