@@ -10,6 +10,7 @@ module.exports = (robot) ->
         'うける' : 'http://open2ch.net/p/appli-1410951928-465.png'
         'がんばる' : 'http://blog-imgs-74.fc2.com/7/t/o/7toriaezu/rain.jpg'
         'しずかに' : 'http://livedoor.blogimg.jp/deremasu/imgs/f/9/f90af096.png'
+        'おだやか' : 'https://sdlab.slack.com/files/umr00/F04B6B33U/slack_for_ios_upload.png'
     }
 
     help = ""
