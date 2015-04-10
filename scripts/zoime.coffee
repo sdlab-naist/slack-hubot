@@ -35,10 +35,18 @@ module.exports = (robot) ->
         '進捗':'http://pic.non117.com/C/ch.jpg'
         '土下座':'http://anfield.blog.ocn.ne.jp/gorimuchu/images/2014/03/21/new_game_01_p011_2.jpg'
         'がんばれた':'https://pbs.twimg.com/media/B48WE_XIIAAqDls.jpg'
-        'help':'おはようございます\nありがとうございます\nきゅうけいする\nごはんにする\nやすむ\nねる\nもう夜\nきたく\nあきらめる\nがんばる\nがんばるぞい\nやった\nだめだ\nぐーたらする\nいけるきがする\n進捗\n土下座\nがんばれた'
     }
-    result = zois[name]
-    if result
-      msg.send "#{result}"
+
+    help = ""
+    for k,v of zois
+        help += k + "\n"
+    help = help.substring(0, help.length - 1);
+
+    if name == "help"
+        msg.send "#{help}"
     else
-      msg.send "#{name}はないぞい"
+        result = zois[name]
+        if result
+          msg.send "#{result}"
+        else
+          msg.send "#{name}はないぞい"
