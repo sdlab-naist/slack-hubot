@@ -17,7 +17,7 @@ module.exports = (robot) ->
         'はたらきたくない' : 'http://i.imgur.com/m7CuZOP.png'
         'ぷろでゅーさー' : 'http://i.imgur.com/MC4sgBT.png'
         'あそんで' : 'http://i.imgur.com/axgWmrF.png'
-	'わかる' : 'http://blog-imgs-45.fc2.com/7/t/o/7toriaezu/201312031730468f5.png'
+        'わかる' : 'http://blog-imgs-45.fc2.com/7/t/o/7toriaezu/201312031730468f5.png'
     }
 
     null_list = [
