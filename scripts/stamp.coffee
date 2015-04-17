@@ -129,7 +129,7 @@ module.exports = (robot) ->
         msg.send "#{help}"
     else
         resultList = [dict[message]]
-        if !result?
+        if !resultList[0]?
             num = 1
             if isFinite(message)
                 num = parseInt(message, 10);
