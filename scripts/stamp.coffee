@@ -29,6 +29,11 @@ module.exports = (robot) ->
     null_dict = {
         # 5
         5 : [
+            'http://imas-cinderella.com/assets/img/top/visual/main1.jpg'
+            'http://imas-cinderella.com/assets/img/top/visual/main2.jpg'
+            'http://imas-cinderella.com/assets/img/top/visual/main3.jpg'
+            'http://imas-cinderella.com/assets/img/top/visual/main4.jpg'
+            'http://imas-cinderella.com/assets/img/top/visual/main5.jpg'
             'http://imas-cinderella.com/assets/img/top/visual/main6.jpg'
         ]
         # 350
@@ -38,7 +43,7 @@ module.exports = (robot) ->
             'http://moba-mas.com/wp-content/uploads/2015/01/00a10e6b8e178ce3976b1b0456af74ca.jpg'
             # 渋谷
             'http://livedoor.blogimg.jp/muryokuzin/imgs/4/5/45c62ba4.jpg'
-            'http://24.media.tumblr.com/84e83c5a0dd9be347bf478f9a7d9631b/tumblr_mnpt5iIPoy1risnoxo1_1280.png'
+            'http://moba-mas.com/wp-content/uploads/2013/11/5ef4284b0c62f564a54c532512615b11.jpg'
             # 本田
             'http://livedoor.blogimg.jp/deremasu/imgs/8/1/813ecacc.jpg'
             'http://moba-mas.com/wp-content/uploads/2013/05/91fcfc8ea99e57db7e57a9c254399d1e.jpg'
@@ -73,7 +78,7 @@ module.exports = (robot) ->
             'http://moba-mas.com/wp-content/uploads/2013/08/583d7a939c2f8d984fd5a45328019764.jpg'
             'http://blog-imgs-43.fc2.com/7/t/o/7toriaezu/2014093023012219ds.jpg'
             # かなこ
-            'http://livedoor.blogimg.jp/deremasu/imgs/f/4/f4d4f8e6.jpg'
+            'http://125.6.169.35/idolmaster/image_sp/card/l/67f12e31fbef152f316ccab074033751.jpg'
             'http://livedoor.blogimg.jp/deremasu/imgs/1/3/133b72cb.jpg'
             # きらり
             'http://moba-mas.com/wp-content/uploads/2014/01/a913d3efecf382ac9179ba1073df905c.jpg'
