@@ -12,7 +12,7 @@ module.exports = (robot) ->
     imageMe msg, msg.match[3], (url) ->
       msg.send url
 
-  robot.hear /(image|img)( me)? (.*)/i, (msg) ->
+  robot.hear /^(image|img)( me)? (.*)/i, (msg) ->
     imageMe msg, msg.match[3], (url) ->
       msg.send url
 
@@ -20,7 +20,7 @@ module.exports = (robot) ->
     imageMe msg, msg.match[2], true, (url) ->
       msg.send url
 
-  robot.hear /animate( me)? (.*)/i, (msg) ->
+  robot.hear /^animate( me)? (.*)/i, (msg) ->
     imageMe msg, msg.match[2], true, (url) ->
       msg.send url
 

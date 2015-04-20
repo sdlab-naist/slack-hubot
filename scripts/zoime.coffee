@@ -14,7 +14,7 @@
 module.exports = (robot) ->
 
 
-  robot.hear /zoi (.*)/i, (msg) ->
+  robot.hear /^zoi (.*)/i, (msg) ->
     name = msg.match[1]
     zois = {
         'おはようございます' : 'https://pbs.twimg.com/media/Bs7qd4uCAAAwalT.jpg:large'

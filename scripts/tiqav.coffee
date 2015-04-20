@@ -3,7 +3,7 @@ module.exports = (robot) ->
     tiqavMe robot, msg.match[3], (url) ->
       msg.send url
 
-  robot.hear /(tiqav|tiq)( me)? (.*)/i, (msg) ->
+  robot.hear /^(tiqav|tiq)( me)? (.*)/i, (msg) ->
     tiqavMe robot, msg.match[3], (url) ->
       msg.send url
 

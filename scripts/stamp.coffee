@@ -1,5 +1,5 @@
 module.exports = (robot) ->
-  robot.hear /stamp (.*)/i, (msg) ->
+  robot.hear /^stamp (.*)/i, (msg) ->
     message = msg.match[1]
 
     dict = {
