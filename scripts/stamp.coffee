@@ -127,15 +127,16 @@ module.exports = (robot) ->
 
     if message == "help"
         msg.send "#{help}"
-    else
-        resultList = [dict[message]]
-        if !resultList[0]?
-            num = 1
-            if isFinite(message)
-                num = parseInt(message, 10);
-                num = Math.min(10, num)
-                num = Math.max(1, num)
-            resultList = gacha(null_dict, num, msg)
+    else if dict[message]?
+        result = dict[message]
+        msg.send "#{result}?#{new Date().getTime()}"
+    else if msg.message.room == "talk-with-image"
+        num = 1
+        if isFinite(message)
+            num = parseInt(message, 10);
+            num = Math.min(10, num)
+            num = Math.max(1, num)
+        resultList = gacha(null_dict, num, msg)
         for result in resultList
             msg.send "#{result}?#{new Date().getTime()}"
 
