@@ -1,13 +1,15 @@
 module.exports = (robot) ->
   robot.hear /^bus (\w+)( (\d+))?/i, (msg) ->
-    strList = nextBus(msg.match[1], msg.match[2], msg)
-    if strList.length > 0
-      msg.send strList
+    if !destAvailable(msg.match[1])
+      msg.send availableDest()
     else
-      msg.send "本日の運行は終了しました"
+      str = nextBus(msg.match[1], msg.match[2], msg)
+      if str != ""
+        msg.send str
+      else
+        msg.send "本日の運行は終了しました"
 
 nextBus = (dest, count, msg) ->
-  return if !destAvailable(dest)
   count = parseInt(count, 10) || 3
   count = Math.min(5, count)
   count = Math.max(1, count)
@@ -17,7 +19,7 @@ nextBus = (dest, count, msg) ->
   dict = timeDict(current.getDay() == 0 || current.getDay() == 6)
 
   num = 0
-  timeStrList = []
+  str = ""
   while count > num
     break if hour > 23
     if dict[hour]?
@@ -28,14 +30,18 @@ nextBus = (dest, count, msg) ->
       for time in list
         break if num >= count
         if time > min
-          timeStrList.push("#{hour}時#{time}分")
+          str += "#{hour}時#{time}分, "
           num++
     min = -1
     hour++
-  timeStrList
+  str = str.substring(0, str.length - 2)
+  str
 
 destAvailable = (dest) ->
   dest == "kita" || dest == "gaku" || dest == "taka"
+
+availableDest = () ->
+  "kita : 学研北生駒\ngaku : 学園前\ntaka : 高の原"
 
 keysFromDestination = (dest) ->
   dict = {
