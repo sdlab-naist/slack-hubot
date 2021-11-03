@@ -17,7 +17,7 @@
     "hubot-scripts": "^2.5.16",
     "hubot-shipit": "^0.2.0",
     "hubot-slack": "^4.7.1",
-    "validator": "^3.39.0"
+    "validator": "^13.7.0"
   },
   "engines": {
     "node": "> 4.0.0"
